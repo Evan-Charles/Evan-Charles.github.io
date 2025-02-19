@@ -17,17 +17,43 @@
     <a href="https://www.heig-vd.ch" title="Heig-vd" target="_blank">Heig-vd</a>
     <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"></canvas>
     <ol>
-      <li>H</li>
-      <li>Z</li>
+      <li>A</li>
+      <li>B</li>
         <ul>
           <li>C</li>
           <li>D</li>
           <li>E</li>
         </ul>
       </li>
-      <li>A</li>
+      <li>F</li>
 </ol>
-
+<table>
+    <!-- row -->
+    <tr>
+        <!-- header column -->
+        <th>Student ID</th>
+        <th>Grade</th>
+    </tr>
+    <tr>
+        <!-- regular column -->
+        <td>4</td>
+        <td>5</td>
+    </tr>
+    <tr>
+        <!-- merged columns -->
+        <td colspan="2">6</td>
+    </tr>
+</table>
+    <form action='/articles/' method='POST'>
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" />
+    <label>Title:
+        <input type="text" id="title" name="title" />
+    </label>
+    <label for="content">Content:</label>
+    <textarea id="content" name="content" />
+    <button type="submit">Save</button>
+</form>
 
 </body>
 </html>
